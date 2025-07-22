@@ -1,0 +1,290 @@
+/* Fonte e reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #0f0f1a; /* fundo dark */
+  color: #e0e0e0; /* texto claro */
+}
+
+header {
+  position: relative;
+  background-image: url('assets/img/perfil.png'); /* sua imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* camada escura por cima pra contraste */
+header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(15, 15, 26, 0.6); /* overlay dark translúcido */
+  z-index: 1;
+}
+
+#header_content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px 40px;
+}
+
+/* canto esquerdo */
+.canto-esquerdo h1 {
+  font-size: 1.8em;
+  color: #e0e0e0;
+  margin: 0;
+  text-shadow: 2px 2px 5px #000;
+}
+
+/* canto direito */
+.canto-direito ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.canto-direito a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.canto-direito a:hover {
+  color: #3aa2d1;
+}
+
+#perfil h1 {
+  font-size: 2em;
+  color: #3aa2d1;
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #000;
+}
+
+#perfil img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #3aa2d1;
+  box-shadow: 0 0 15px rgba(58, 162, 209, 0.6);
+}
+
+/* Menu de navegação */
+#menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+#menu a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+#menu a:hover {
+  color: #3aa2d1;
+}
+
+/* Menu com efeito tipo painel */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #3aa2d1;
+}
+
+/* Seções */
+section {
+  padding: 40px 20px;
+  margin: 0;
+}
+
+#about {
+  margin-bottom: 0;
+  padding-bottom: 10px;;
+}
+
+#video {
+    margin-top: -10px;
+    padding: 10px;
+}
+
+h2 {
+  color: #3aa2d1;
+  margin-bottom: 20px;
+}
+
+/* Texto sobre criadora */
+#sobre_texto p {
+  line-height: 1.6;
+  background-color: #1b1b2a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Faixa decorativa estilo Sims */
+.faixa-criador {
+  height: 12px;
+  background-image: repeating-linear-gradient(45deg, #3aa2d1 0 10px, transparent 10px 20px);
+  background-size: 200% 100%;
+  animation: moverFaixa 20s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes moverFaixa {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+/* Vídeo */
+.youtube iframe {
+  max-width: 100%;
+  border: 4px solid #3aa2d1;
+  border-radius: 10px;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1c1c2e;
+  border-top: 2px solid #3aa2d1;
+}
+
+footer img {
+  width: 32px;
+  margin: 0 8px;
+  filter: invert(80%);
+}
+
+#redes_sociais {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+#redes_sociais a {
+  display: inline-block;
+  transition: filter 0.3s ease;
+}
+
+#redes_sociais a:hover {
+  filter: brightness(1.3) saturate(150%) hue-rotate(200deg);
+  transform: scale(1.1);
+}
+
+#redes_sociais a img {
+  transition: transform 0.001s ease;
+  filter: grayscale(60%) brightness(0.9);
+}
+
+#redes_sociais a:hover img {
+  filter: none;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #3aa2d1;
+}
+
+
+
+.voltar-topo {
+  display: inline-block;
+  margin-top: 10px;
+  color: #3aa2d1;
+  text-decoration: none;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    align-items: flex-start;
+  }
+
+  #header_content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    height: auto;
+  }
+
+  .canto-esquerdo h1 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+  }
+
+  .canto-direito ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .canto-direito a {
+    font-size: 1em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  section {
+    padding: 20px 15px;
+  }
+
+  #sobre_texto p {
+    padding: 15px;
+    font-size: 1em;
+  }
+
+  #perfil h1 {
+    font-size: 1.6em;
+  }
+
+  #perfil img {
+    width: 100px;
+    height: 100px;
+  }
+
+  footer img {
+    width: 28px;
+  }
+
+  #redes_sociais {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
