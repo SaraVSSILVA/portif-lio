@@ -851,3 +851,73 @@ footer {
     padding: 1rem;
   }
 }
+
+/* Bot Assistente Flutuante */
+#bot-assistente {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 9999;
+}
+
+#bot-icone {
+  background: #0a0a0a;
+  border: 2px solid #00aaff;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: background 0.2s;
+}
+
+#bot-icone:hover {
+  background: #0a0a0a;
+}
+
+#bot-modal {
+  display: none;
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  width: 320px;
+  background: #0a0a0a;
+  border: 1.5px solid #00aaff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  padding: 0;
+}
+
+#bot-modal.aberto {
+  display: block;
+}
+
+.bot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #00aaff;
+  color: #0a0a0a;
+  padding: 12px 16px;
+  border-radius: 12px 12px 0 0;
+  font-weight: bold;
+}
+
+#bot-fechar {
+  background: none;
+  border: none;
+  color: #0a0a0a;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.bot-body {
+  padding: 16px;
+}
+
+#sugestao-bot {
+  margin-top: 12px;
+  font-size: 1rem;
+  color: #e0e0e0;
+}

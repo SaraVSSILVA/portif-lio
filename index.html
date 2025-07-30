@@ -264,8 +264,33 @@
       </section>
     </main>
 
+<!-- Bot Assistente Flutuante -->
+<div id="bot-assistente">
+  <button id="bot-icone" aria-label="Abrir assistente">
+    🤖
+  </button>
+  <div id="bot-modal" class="fechado">
+    <div class="bot-header">
+      <span>Assistente de Recomendações</span>
+      <button id="bot-fechar" aria-label="Fechar">×</button>
+    </div>
+    <div class="bot-body">
+      <label for="interesse-bot">O que você gostaria de ver?</label>
+      <select id="interesse-bot">
+        <option value="">Escolha uma categoria:</option>
+        <option value="frontend">Frontend</option>
+        <option value="backend">Backend</option>
+        <option value="dados">Dados</option>
+        <option value="automacao">Automação</option>
+        <option value="mobile">Outros</option>
+        <option value="ux">Projetos</option>
+        <option value="todos">Todos</option>
+      </select>
+      <div id="sugestao-bot"></div>
+    </div>
+  </div>
+</div>
 
-    
     <footer>
       <div class="container">
         <section id="social-media-links">
