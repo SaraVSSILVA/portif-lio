@@ -1,129 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Projeto Portfólio">
-		<meta name="author" content="Generation Brasil">
-		<meta name="keywords" content="HTML, CSS, JavaScript">
-		<title>Meu Perfil</title>
-		<link rel="stylesheet" href="assets/css/estilos.css" />
-	</head>
-	<body>
-		<!-- Cabeçalho da Página (header) -->
-		<header>
-			<!-- Div Conteudo do Cabeçalho -->
-			<div id="header_content">
-				<!-- Titulo do Cabeçalho -->
-				<div id="titulo">
-					<!-- Seu nome -->
-					<h1>Generation Brasil</h1>
-				</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Entre em contato com Sara Silva, Biotecnologista e Desenvolvedora Fullstack."
+    />
+    <meta name="author" content="Sara Silva" />
+    <meta
+      name="keywords"
+      content="Contato, Sara Silva, Biotecnologia, Desenvolvedora, Fullstack, JavaScript, Python"
+    />
+    <title>Contato | Sara Silva</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+  </head>
+  <body>
+    <header id="main-header">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">Sara Silva</a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html#hero-section">Início</a></li>
+            <li><a href="index.html#about">Sobre Mim</a></li>
+            <li><a href="index.html#skills">Habilidades</a></li>
+            <li><a href="index.html#projects">Projetos</a></li>
+            <li><a href="contato.html" class="active">Contato</a></li>
+          </ul>
+        </nav>
+        <button class="nav-toggle" aria-label="Abrir Menu">☰</button>
+      </div>
+    </header>
 
-				<!-- Conteudo do Menu da Página (header) -->
-				<div id="menu">
-					<!-- Menu da Página -->
-					<nav>
-						<!-- Marcadores não ordenados + links -->
-						<ul id="menu">
-							<li>
-								<a href="index.html"> Home </a>
-							</li>
-							<li>
-								<a href="contato.html"> Contato </a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</header>
+    <main>
+      <section id="contact" class="section-padded">
+        <div class="container">
+          <h2>Fale Comigo</h2>
+          <p class="section-description">
+            Se você tem um projeto em mente, gostaria de colaborar ou apenas
+            quer trocar uma ideia sobre biotecnologia e desenvolvimento,
+            sinta-se à vontade para entrar em contato.
+          </p>
 
-		<!-- Seção Principal da Página (main) -->
-		<main>
-			
-			<!-- Seção Formulário de Contato e Redes Sociais -->
-			<section id="contact">
-				
-				<!-- Seção do Formulário-->
-				<form action="#" method="submit">
-					<label for="nome">Nome: </label>
-					<input
-						id="nome"
-						type="text"
-						name="name"
-						placeholder="Digite seu nome"
-						required
-					/>
-					<span id="txtNome"></span>
+          <div class="contact-grid">
+            <div class="contact-form-wrapper">
+              <h3>Envie-me uma Mensagem</h3>
+              <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                  <label for="name">Nome Completo</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Seu nome"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Seu Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="seu.email@example.com"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="subject">Assunto</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Assunto da mensagem"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message">Mensagem</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Sua mensagem..."
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Enviar Mensagem</button>
+              </form>
+            </div>
 
-					<label for="email">Email: </label>
-					<input
-						id="email"
-						type="email"
-						name="email"
-						placeholder="Digite seu email"
-						required
-					/>
-					<span id="txtEmail"></span>
+            <div class="contact-info-wrapper">
+              <h3>Outras Formas de Contato</h3>
+              <div class="info-item">
+                <p><strong>Email:</strong> saravitoriads@outlook.com</p>
+                </div>
+              <div class="info-item">
+                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/saravssilva" target="_blank">linkedin.com/in/saravssilva</a></p>
+              </div>
+              <div class="info-item">
+                <p><strong>GitHub:</strong> <a href="https://github.com/saraVSSILVA" target="_blank">github.com/saraVSSILVA</a></p>
+              </div>
+              </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-					<label for="subject">Assunto: </label>
-					<input
-						id="subject"
-						type="text"
-						name="subject"
-						placeholder="Digite o título da mensagem"
-						required
-					/>
-					<span id="txtSubject"></span>
+    <footer>
+      <div class="container">
+        <section id="social-media-links">
+          <a href="#" target="_blank" aria-label="LinkedIn de Sara Silva"
+            ><img src="assets/img/linkedin.svg" alt="LinkedIn"
+          /></a>
+          <a href="#" target="_blank" aria-label="GitHub de Sara Silva"
+            ><img src="assets/img/github.svg" alt="Github"
+          /></a>
+          <a href="#" target="_blank" aria-label="Instagram de Sara Silva"
+            ><img src="assets/img/instagram.svg" alt="Instagram"
+          /></a>
+        </section>
 
-					<label for="message">Mensagem: </label>
-					<textarea
-						id="message"
-						name="message"
-						placeholder="Digite sua mensagem"
-						required
-					>
-					</textarea>
+        <p class="copyright">Feito com 🧡 por Sara Silva - 2025</p>
+        <a href="#main-header" class="back-to-top">⬆️ Voltar ao topo</a>
+      </div>
+    </footer>
 
-					<button type="submit">Enviar</button>
-				</form>
-
-				<!-- Seção do Google Maps -->
-				<article id="mapa">
-
-					<div id="endereco">
-						<p>Pirituba</p>
-						<p>São Paulo - SP</p>
-					</div>
-
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.304763454984!2d-46.72021640000003!3d-23.449468900000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cefbc5e5d89c8f%3A0xb485e08b48a44f74!2sR.%20Aurora%20do%20Norte%2C%20332%20-%20Jardim%20Lider%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002983-150!5e0!3m2!1spt-BR!2sbr!4v1752859144408!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    
-                    </iframe>
-					
-                    </iframe>
-
-				</article>
-			</section>
-		</main>
-
-		<!-- Rodapé da Página (footer) -->
-		<footer>
-			<!-- Seção de Contato - Redes Sociais -->
-			<section id="redes_sociais">
-				<a href="">
-					<img src="assets/img/linkedin.svg" alt="LinkedIn" />
-				</a>
-				<a href="">
-					<img src="assets/img/github.svg" alt="Github" />
-				</a>
-				<a href="">
-					<img src="assets/img/instagram.svg" alt="Instagram" />
-				</a>
-			</section>
-
-			<h3>Feito com 🧡 por Sara Silva - 2025</h3>
-      <a href="#" class="voltar-topo">⬆️Voltar ao topo</a>
-		</footer>
-	</body>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

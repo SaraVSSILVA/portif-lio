@@ -3,89 +3,286 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Projeto Portfólio" />
+    <meta
+      name="description"
+      content="Portfólio profissional de Sara Silva, Biotecnologista e Desenvolvedora Fullstack (JavaScript, Python)."
+    />
     <meta name="author" content="Sara Silva" />
-    <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <title>Meu Perfil</title>
+    <meta
+      name="keywords"
+      content="Sara Silva, Portfólio, Biotecnologia, Desenvolvedora Fullstack, JavaScript, Python, Desenvolvimento Web, Programação"
+    />
+    <title>Sara Silva | Biotecnologia & Desenvolvimento Web</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Link para o CSS externo -->
     <link rel="stylesheet" href="assets/css/estilos.css" />
   </head>
-  <body class="home">
-    <!-- Cabeçalho -->
-    <header>
-      <div id="header_content">
-        <div class="canto-esquerdo">
-          <h1>Generation Brasil</h1>
+  <body>
+    <section id="hero-section">
+      <div class="hero-bg-illustration"></div>
+      <div class="hero-content">
+        <div class="profile-container">
+          <div class="pixel-overlay"></div>
+          <img
+            src="assets/img/pixelar.jpeg"
+            alt="Foto de Perfil de Sara Silva"
+            class="profile-photo"
+          />
         </div>
+        <h1 class="main-title">Sara Silva</h1>
+        <p class="subtitle">Biotecnologista & Desenvolvedora Fullstack</p>
+        <p class="tagline">
+          Inovação na intersecção da ciência da vida e da engenharia de
+          software.
+        </p>
+        <a href="#about" class="call-to-action-btn">Explorar Meu Trabalho</a>
+      </div>
+    </section>
 
-        <div class="canto-direito">
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="contato.html">Contato</a></li>
-            </ul>
-          </nav>
+    <header id="main-header">
+      <div class="header-content">
+        <div class="logo">
+          <a href="#hero-section">Sara Silva</a>
         </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#hero-section">Início</a></li>
+            <li><a href="#about">Sobre Mim</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+        <button class="nav-toggle" aria-label="Abrir Menu">☰</button>
       </div>
     </header>
 
-    <!-- Conteúdo principal -->
     <main>
-      <section id="about">
-        <!-- Faixa decorativa repetida da imagem do criador -->
-        <div class="faixa-criador"></div>
-        <h2>Sobre a Sara Silva</h2>
+      <section id="about" class="section-padded">
+        <div class="container">
+          <h2>Sobre Mim</h2>
+          <p>
+            Sou estudante de Biotecnologia e entusiasta do desenvolvimento web,
+            atuando na interseção entre ciência e tecnologia através de projetos
+            acadêmicos e pessoais. Tenho interesse especial por soluções que
+            transformam dados complexos em aplicações funcionais e intuitivas,
+            explorando tecnologias como JavaScript, Python, React, Node.js e
+            bancos de dados.
+          </p>
+          <p>
+            Minha experiência acadêmica e autodidata em análise de problemas
+            biológicos e desenvolvimento fullstack me oferece uma perspectiva
+            singular para inovar. Sou movida pela curiosidade, pelo aprendizado
+            contínuo e pelo desejo de aplicar o conhecimento em criações que
+            gerem impacto positivo.
+          </p>
 
-        <div id="conteudo">
-          <!-- Texto sobre o criador -->
-          <article id="sobre_texto">
-            <p>
-              Com uma mente analítica e curiosidade científica, estou em
-              transição para a tecnologia, desenvolvendo habilidades em Full
-              Stack JavaScript. Aprofundando meu conhecimento em programação,
-              resolução de problemas e construção de soluções inteligentes,
-              busco aplicar pensamento crítico e inovação na criação de projetos
-              práticos. Estou imersa em um aprendizado intensivo, explorando
-              tecnologias como React, Node.js e bancos de dados, enquanto
-              fortaleço minha capacidade de colaboração e adaptação ao dinamismo
-              do setor de tecnologia.
-            </p>
-          </article>
+          <p>
+            Atualmente, aprofundo meus estudos nessas duas áreas, cultivando
+            pensamento crítico e explorando novos horizontes que unem ciência,
+            tecnologia e propósito.
+          </p>
+
+          <section id="linha-tempo-genetica">
+            <h2>🧬 Minha Linha do Tempo</h2>
+            <div class="timeline-dna">
+              <div class="timeline-line"></div>
+              
+              <div class="timeline-event left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2017–2018</span>
+                  <strong>Talentos Cobranças (Via Varejo)</strong><br>
+                  Estágio em call center ativo e receptivo. Desenvolvi disciplina, escuta ativa e resiliência desde o início da minha jornada.<br><br>
+                  <strong>Teatro e Apresentações Públicas</strong><br>
+                  Dois anos de atuação com público. Aprimorei comunicação, criatividade, presença de palco e colaboração — habilidades que hoje aplico em tecnologia.
+                </div>
+              </div>
+              
+              <div class="timeline-event right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2019–2020</span>
+                  <strong>Concentrix Brasil (Nubank)</strong><br>
+                  Atendimento via chat com foco em estornos, faturas e relação com serviços financeiros. Aprendi a lidar com precisão e agilidade em ambientes digitais.
+                </div>
+              </div>
+              
+              <div class="timeline-event left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2020–2021</span>
+                  <strong>Cobasi</strong><br>
+                  Assistente de BackOffice: gestão de tickets com Zendesk, fluxos VTEX e operação colaborativa. Evoluí minha organização e lógica de processos.
+                </div>
+              </div>
+              
+              <div class="timeline-event left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2022–2024</span>
+                  <strong>Petz</strong><br>
+                  Atuação estratégica em Reclame Aqui, gestão de crise na Bassar Pet Food e uso de sistemas corporativos como SAP e Oracle. Fortaleci visão analítica e entrega de soluções.<br><br>
+                  <strong>Voluntariado</strong><br>
+                  Participação em ações sociais com ONGs de proteção animal e população vulnerável. Aprendi sobre impacto real, empatia e trabalho coletivo.
+                </div>
+              </div>
+              
+              <div class="timeline-event right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2025</span>
+                  <strong>Bootcamp FullStack JavaScript – Generation Brasil</strong><br>
+                  Imersão em tecnologias como React, Python e automações. Desenvolvi projetos com impacto prático e mergulhei no mundo do desenvolvimento.
+                </div>
+              </div>
+              
+              <div class="timeline-event left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2025–2028</span>
+                  <strong>Graduação em Biotecnologia – Anhembi Morumbi</strong><br>
+                  Integração entre ciências biológicas e tecnologia. Recomeço com propósito: aplicar automações e dados para saúde e soluções bioinformáticas.
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <a href="#projects" class="btn-primary">Ver Meus Projetos</a>
         </div>
       </section>
 
-      <!-- Seção do vídeo -->
-      <section id="video">
-        <h2>Meu vídeo favorito:</h2>
-        <div class="youtube">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/Z3_mtwMMuGI?si=F1QiiDYSfsPG3nF0"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          >
-          </iframe>
+      <section id="skills" class="section-light section-padded">
+        <div class="container">
+          <h2>Minhas Habilidades</h2>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3>Frontend</h3>
+              <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React</li>
+                <li>Responsividade (Mobile-first)</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Backend</h3>
+              <ul>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Python</li>
+                <li>APIs RESTful</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Banco de Dados</h3>
+              <ul>
+                <li>SQL (PostgreSQL, MySQL)</li>
+                <li>NoSQL (MongoDB)</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Cloud Computing & Infraestrutura</h3>
+              <ul>
+                <li>Implementação de APIs e aplicações web</li>
+                <li>Gerenciamento de recursos via LaaS, PaaS e SaaS</li>
+                <li>Integração com CI/CD e automações modernas</li>
+                <li>Segurança, escalabilidade e monitoramento de ambientes Cloud</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Ferramentas & Outros</h3>
+              <ul>
+                <li>Git & GitHub</li>
+                <li>VS Code</li>
+                <li>Metodologias Ágeis</li>
+                <li>Resolução de Problemas Científicos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section-padded">
+        <div class="container">
+          <h2>Meus Projetos</h2>
+          <div class="projects-grid">
+            <article class="project-card">
+              <img
+                src="assets/img/capa simdash.png"
+                alt="Imagem do Projeto 1"
+              />
+              <h3>Projeto de Dashboard de Dados</h3>
+              <p>
+                Aplicação em Python para visualização interativa de dados
+                lidos de um CSV.
+              </p>
+              <div class="project-links">
+                <a href="#" target="_blank" class="btn-secondary">Ver Demo</a>
+                <a href="https://github.com/SaraVSSILVA/SimDash" target="_blank" class="btn-secondary">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img
+                src="assets/img/capa autobot.png"
+                alt="Imagem do Projeto 2"
+              />
+              <h3>AutoBot - Automação Inteligente de Cadastros</h3>
+              <p>
+                Solução desenvolvida em Python para automatizar o preenchimento de formulários em sistemas web. Ideal para tornar processos de cadastro mais rápidos, precisos e eficientes.
+              </p>
+              <div class="project-links">
+                <a href="#" target="_blank" class="btn-secondary">Ver Demo</a>
+                <a href="https://github.com/SaraVSSILVA/autobot" target="_blank" class="btn-secondary">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img
+                src="assets/img/capa ecoechos.png"
+                alt="Imagem do Projeto 3"
+              />
+              <h3>EcoEchos: Minha Pegada Verde</h3>
+              <p>
+                Uma ferramenta simples e divertida para calcular sua pegada de carbono pessoal e descobrir como você pode reduzi-la! Este simulador te ajuda a entender o impacto das suas atividades diárias no meio ambiente, oferecendo feedback e dicas personalizadas.
+              </p>
+              <div class="project-links">
+                <a href="#" target="_blank" class="btn-secondary">Ver Demo</a>
+                <a href="https://github.com/SaraVSSILVA/EcoSimulador" target="_blank" class="btn-secondary">GitHub</a>
+              </div>
+            </article>
+          </div>
+          <p class="cta-more-projects">
+            Explore todos os meus projetos e contribuições no meu
+            <a href="https://github.com/SaraVSSILVA" target="_blank">GitHub</a>.
+          </p>
         </div>
       </section>
     </main>
 
-    <!-- Rodapé -->
-    <footer>
-      <section id="redes_sociais">
-        <a href="#"><img src="assets/img/linkedin.svg" alt="LinkedIn" /></a>
-        <a href="#"><img src="assets/img/github.svg" alt="Github" /></a>
-        <a href="#"><img src="assets/img/instagram.svg" alt="Instagram" /></a>
-      </section>
 
-      <h3>Feito com 🧡 por Sara Silva - 2025</h3>
-      <a href="#" class="voltar-topo">⬆️Voltar ao topo</a>
+    
+    <footer>
+      <div class="container">
+        <section id="social-media-links">
+          <a href="https://www.linkedin.com/in/saravssilva" target="_blank" aria-label="LinkedIn de Sara Silva"
+            ><img src="assets/img/linkedin.svg" alt="LinkedIn"
+          /></a>
+          <a href="https://github.com/SaraVSSILVA" target="_blank" aria-label="GitHub de Sara Silva"
+            ><img src="assets/img/github.svg" alt="Github"
+          /></a>
+          <a href="https://www.instagram.com/svmagia/" target="_blank" aria-label="Instagram de Sara Silva"
+            ><img src="assets/img/instagram.svg" alt="Instagram"
+          /></a>
+        </section>
+
+        <p class="copyright">Feito com 🧡 por Sara Silva - 2025</p>
+        <a href="#hero-section" class="back-to-top">⬆️ Voltar ao topo</a>
+      </div>
     </footer>
 
     <script src="assets/js/script.js"></script>
