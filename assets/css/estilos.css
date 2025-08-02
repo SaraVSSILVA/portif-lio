@@ -138,8 +138,8 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../img/designer.jpeg"); /* Sua imagem abstrata de fundo */
-  background-size: cover;
+  background-image: url("../img/capaads.png"); /* Sua imagem abstrata de fundo */
+  background-size: contain;
   background-position: center;
   filter: brightness(80%) contrast(120%); /* Ajustes sutis para a imagem de fundo */
   opacity: 0.6; /* Suaviza a ilustração para o texto e foto se destacarem */
