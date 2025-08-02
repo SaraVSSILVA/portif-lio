@@ -89,18 +89,6 @@ p {
   text-align: center;
 }
 
-.btn-primary {
-  background-color: var(--cor-btn-bg);
-  color: var(--cor-btn-text);
-  border: none;
-  box-shadow: 0 5px 15px var(--sombra-card);
-}
-
-.btn-primary:hover {
-  background-color: #00e63d; /* Um pouco mais claro */
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px var(--sombra-card);
-}
 
 .btn-secondary {
   background-color: transparent;
